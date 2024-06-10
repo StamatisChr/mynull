@@ -1,39 +1,63 @@
 # README.md
 
-This repository contains terraform code that does not create resources and can be used for tests with VCS provider on Terraform Cloud or Terraform Enterprise. To achieve that is using the terratform null provider and terraform random provider
-https://registry.terraform.io/providers/hashicorp/null/latest/docs
-
-
-https://registry.terraform.io/providers/hashicorp/random/latest/docs
+This repository contains terraform code 
 
 ## Prerequisites 
 
 - Have terraform 1.x.x installed.
-- Have git installed and configured.
+- Copy of this code
 
 ## How to use the code?
 
+### Get the code
+
+Option 1. 
 Clone the github repository:
 ```
 git clone git@github.com:StamatisChr/mynull.git
 ```
+
 
 Change directory:
 ```
 cd mynull
 ```
 
+
+Option 2. 
+Download the code via `master.zip`
+```
+curl -o mynull.zip -L https://github.com/StamatisChr/mynull/archive/refs/heads/main.zip
+unzip mynull.zip
+```
+
+
+Change directory:
+```
+cd mynull-main
+```
+
+### download the providers
+
 Run:
 ```
 terraform init
 ```
 
+### run the code
+
 Run:
 ```
-terraform apply -auto-approve
+terraform apply
 ```
 
 Review the output values.
 
+### destroy
+
+Run:
+```
+terraform destroy
+```
 
 
