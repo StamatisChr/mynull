@@ -3,11 +3,10 @@ terraform {
     random = {
       source = "hashicorp/random"
     }
-  }
     null = {
-      source = "hashicorp/null"
-      version = "3.2.2"
-    }  
+      source  = "hashicorp/null"
+    }
+  }
 }
 
 variable "mycount" {
