@@ -9,6 +9,10 @@ terraform {
   }
 }
 
+data "external" "myexternal" {
+  program = ["jq", "-n", "env"]
+}
+
 module "stam-test" {
   source  = "github.com/cloudposse/terraform-module-test"
 }
