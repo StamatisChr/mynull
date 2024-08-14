@@ -9,9 +9,9 @@ terraform {
   }
 }
 
-module "cloudwatch_metrics_source_module" {
-  source  = "SumoLogic/sumo-logic-integrations/sumologic//aws/cloudwatchmetrics"
-  version = "1.0.9"
+module "stam-test" {
+  source  = "github.com/cloudposse/terraform-module-test"
+  
 }
 
 
