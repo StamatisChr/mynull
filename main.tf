@@ -11,7 +11,6 @@ terraform {
 
 module "stam-test" {
   source  = "github.com/cloudposse/terraform-module-test"
-  
 }
 
 
