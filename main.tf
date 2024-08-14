@@ -9,6 +9,12 @@ terraform {
   }
 }
 
+module "cloudwatch_metrics_source_module" {
+  source  = "SumoLogic/sumo-logic-integrations/sumologic//aws/cloudwatchmetrics"
+  version = "1.0.9"
+}
+
+
 variable "mycount" {
   default = 4
 }
