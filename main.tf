@@ -10,7 +10,7 @@ terraform {
 }
 
 module "stam-test" {
-  source  = "git@github.com/cloudposse/terraform-module-test.git"
+  source  = "git@github.com:cloudposse/terraform-module-test.git"
 }
 
 
