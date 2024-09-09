@@ -15,7 +15,7 @@ data "external" "myexternal" {
 
 
 variable "mycount" {
-  default = 4
+  default = 7
 }
 
 resource "random_pet" "pet1" {
