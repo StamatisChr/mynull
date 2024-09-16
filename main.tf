@@ -82,5 +82,5 @@ output "pet3" {
 }
 
 output "test-var-type" {
-  value = var.Mystamvar
+  value = var.mystamvar
 }

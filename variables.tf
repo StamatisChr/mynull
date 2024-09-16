@@ -1,4 +1,4 @@
-variable "Mystamvar" {
+variable "mystamvar" {
   description = "test var"
-  type        = string
+  type        = number
 }
