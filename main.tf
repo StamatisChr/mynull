@@ -80,7 +80,3 @@ resource "random_pet" "pet3" {
 output "pet3" {
   value = random_pet.pet3.*.id
 }
-
-output "test-var-type" {
-  value = var.mystamvar
-}
