@@ -12,9 +12,9 @@ terraform {
   }
 }
 
-data "external" "myexternal" {
-  program = ["jq", "-n", "env"]
-}
+# data "external" "myexternal" {
+#   program = ["jq", "-n", "env"]
+# }
 
 
 variable "mycount" {
