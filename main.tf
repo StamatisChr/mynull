@@ -21,12 +21,12 @@ terraform {
 
 
 variable "mycount" {
-  default = 9
+  default = 3
 }
 
 resource "random_pet" "pet1" {
   prefix = timestamp()
-  length = 1
+  length = 3
 }
 
 output "pet1" {
