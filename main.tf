@@ -55,23 +55,3 @@ resource "random_pet" "pet2" {
 output "pet2" {
   value = random_pet.pet2.*.id
 }
-
-resource "null_resource" "null3" {
-  count = var.mycount
-  triggers = {
-    always_run = timestamp()
-  }
-}
-
-output "null3" {
-  value = null_resource.null3.*.id
-}
-
-resource "random_pet" "pet3" {
-  count  = var.mycount
-  prefix = timestamp()
-}
-
-output "pet3" {
-  value = random_pet.pet3.*.id
-}
