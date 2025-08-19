@@ -6,19 +6,8 @@ terraform {
     null = {
       source  = "hashicorp/null"
     }
-    aws = {
-      source  = "hashicorp/aws"
-    }
-    azurerm = {
-      source = "hashicorp/azurerm"
-    }
   }
 }
-
-# data "external" "myexternal" {
-#   program = ["jq", "-n", "env"]
-# }
-
 
 variable "mycount" {
   default = 7
