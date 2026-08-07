@@ -55,3 +55,9 @@ resource "random_pet" "pet2" {
 output "pet2" {
   value = random_pet.pet2.*.id
 }
+
+output "mycount" {
+  value = var.mycount
+  sensitive = true
+}
+
